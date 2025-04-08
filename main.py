@@ -69,10 +69,10 @@ st.markdown(
     unsafe_allow_html=True)
 
 # --- Tabs ---
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+tab1, tab2, tab4, tab5, tab6, tab7 = st.tabs([
     "🟢 Live Detection",
     "📸 Past Detections",
-    "🔐 Admin Panel",
+
     "📊 Analytics",
     "🗂️ Past Sessions",
     "ℹ️ About",
@@ -88,8 +88,7 @@ with tab2:
     tabs.render_past_detections_tab(tab2)
 
 # --- TAB 3: Admin Panel ---
-with tab3:
-    tabs.render_admin_panel_tab(tab3)
+
 
 # --- TAB 4: Analytics ---
 with tab4:

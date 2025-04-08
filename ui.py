@@ -355,16 +355,7 @@ def render_past_detections_tab(img_files):
         """, unsafe_allow_html=True)
 
 
-def render_admin_panel_tab():
-    """Render the admin panel tab content."""
-    st.markdown("<h2 style='margin-bottom: 1rem;'>🔐 Admin Control Panel</h2>", unsafe_allow_html=True)
-    st.markdown("<p style='color: #6b7280;'>System management and configuration</p>", unsafe_allow_html=True)
 
-    st.markdown('<div class="card">', unsafe_allow_html=True)
-    password = st.text_input("Enter Admin Password:", type="password", placeholder="Enter admin password")
-    st.markdown('</div>', unsafe_allow_html=True)
-
-    return password
 
 
 def render_analytics_tab(analytics_data):
